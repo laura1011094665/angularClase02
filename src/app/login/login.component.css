@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 80%;
+    background: rgba(146, 187, 244, 0.476);
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input{
+    width: 350px;
+    height: 25px;
+    background: none;
+    border-radius: 3px;
+    border: 1px solid #000;
+}
+input::placeholder{
+    position: relative;
+    right: -12px;
+    color: #000;
+}
+.m-2{
+    margin: 12px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    position: relative;
+    left: 120px;
+    
+    background: rgba(146, 187, 244, 0.476);
+}
+button:hover{
+    left: 123px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+p{
+    margin: 12px;
+    font-size: 26px;
+}
+.psesion{
+    width: 200px;
+    border-radius: 12px;
+    background: rgba(146, 187, 244, 0.476);
+    position: relative;
+    top: 1%;
+}
+.btnRegister{
+    position: absolute;
+    left: 52%;
+    top: 22%;
+}

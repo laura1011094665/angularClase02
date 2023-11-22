@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.component.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="psesion">
+    <p>Iniciar Sesión</p>
+</div>
+<div class="btnRegister">
+    <button (click)="navegar()">Register</button>
+
+    <button  (click)="navegar1()" >Dsashboard</button>
+</div>
+    <div class="login">
+        <div class="m-2">
+            <label for="">Name</label><br>
+            <input type="text" name="" id="" [(ngModel)]="campo"><br><br>
+            {{campo}}
+            <label for="">Password</label><br>
+            <input placeholder="ingresa tu password " [(ngModel)]="campo"><br><br>
+            <button (click)="saveData()">Ingresar</button>
+        </div>
+    
+    </div>
+</body>
+</html>
