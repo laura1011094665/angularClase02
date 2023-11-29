@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dashboard.component.css">
-    <title>DashBoard</title>
-</head>
-<body>
+
     <header>
         <h1>RopeMaker</h1>
     </header>
 
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Servicios</a>
-        <a href="#">Acerca de</a>
-        <a href="#">Contacto</a>
-        <a href="#">Salir</a>
+        <button (click)="navegar1()">Ofertas De Trabajo</button>
+        <button>Administrador De Ofertas</button>
+        <button (click)="navegar2()">Perfil</button>
+        <button (click)="navegar()">Salir</button>
     </nav>
     <div class="content">
         <h1>Nosotros</h1>
@@ -37,5 +28,3 @@
         <br>
         <img src="https://img.freepik.com/vector-premium/diseno-logotipo-monogram-mr-logotipo-carta-creativa-empresas-empresas_719418-622.jpg?size=626&ext=jpg" >
     </div>
-</body>
-</html>

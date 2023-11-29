@@ -1,32 +1,25 @@
-
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-dashboard',
+  selector: 'app-perfil',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.css'
+  templateUrl: './perfil.component.html',
+  styleUrl: './perfil.component.css'
 })
-export class DashboardComponent {
-  
+export class PerfilComponent {
   constructor(public router: Router){
-    
+
   }
   navegar(){
     console.log("hola mundo")
     this.router.navigateByUrl('/')
   }
+  
   navegar1(){
     console.log("hola mundo")
-    this.router.navigateByUrl('/ofertas')
+    this.router.navigateByUrl('/dashboard')
   }
-
-  navegar2(){
-    console.log("hola mundo")
-    this.router.navigateByUrl('/perfil')
-  }
-
 }
