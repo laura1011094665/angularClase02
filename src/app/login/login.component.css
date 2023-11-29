@@ -7,8 +7,9 @@
     background: rgb(186, 186, 186);
     border-radius: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: absolute;
-    top: 350px;
+    position: relative;
+    top: -140px;
+    left: 100px;
 }
 input{
     width: 350px;
@@ -60,13 +61,13 @@ p{
     font-size: 26px;
 }
 .psesion{
-    width: 100px;
-    height: 120%;
+    width: 300px;
+    height: 300px;
     border-radius: 12px;
     background: rgb(7, 7, 7);
     color: aliceblue;
     position: relative;
-    top: 1%;
+    top: 150px;
 }
 .btnRegister{
     position: absolute;
