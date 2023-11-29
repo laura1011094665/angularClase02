@@ -2,35 +2,60 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { RegisterComponent } from '../register/register.component';
 
 
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RegisterComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  storageGlobal: String = ''
-  campo='';
-  campo1='';
+  storageGlobal: String = '';
+
+  email: String ='';
+  password: String='';
+
+
 
 
   constructor(public router: Router){
     
   }
 
+
+
   saveData(){
-    let campito = this.campo;
-    let campito1 = this.campo1;
-    if(campito=== null && campito1  ===null){
-      alert('los campos estan vacios')
+    const regX =/"/g
+    const userEmail = localStorage.getItem("correo")
+    console.log(userEmail)
+  
+    const userEmailParse =userEmail?.replace(regX, "")
+    console.log(userEmailParse)
+
+    const userPass= localStorage.getItem("contraseña")
+    console.log(userPass)
+    const userPassParse =userPass?.replace(regX,"")
+    console.log(userPassParse)
+
+    if(this.email == '' || this.password == ''){
+      alert('tienes que llenar los campos')
+    } else if(this.email != userEmailParse || this.password!= userPassParse){
+      alert('el usuario es incorrecto')
+    }else if(this.email == userEmailParse || this.password == userPassParse){
+      alert('bienvenido a RopeMaker')
+      console.log(userEmail)
+
+      this.navegar1()
     }else{
-      
+      alert('error de voce')
     }
   }
+
+
 
   navegar(){
     console.log("hola mundo")

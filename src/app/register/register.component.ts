@@ -1,49 +1,51 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
-
-interface daticos{
-  name:String;
-  lastname:String;
-  email:String;
-  password:String;
-}
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './register.component.html',
   styleUrl: './register.component.css'
 })
 export class RegisterComponent {
   storageGlobal: String=''
   campo=''
-
+  name:String=''
+  lastname:String=''
+  email:String=''
+  password:String=''
+  
+  
   createUser(){
-    const name =(document.getElementById('name') as HTMLSelectElement).value
-    const lastname =(document.getElementById('lastname') as HTMLSelectElement).value
-    const email =(document.getElementById('email') as HTMLSelectElement).value
-    const password =(document.getElementById('password') as HTMLSelectElement).value
-
-    const newData={
-      name:name,
-      lastname:lastname,
-      email:email,
-      password:password  
+    if(this.name == '' || this.lastname == '' || this.email =='' || this.password ==''){
+      alert("los campos no estan llenos :3")
+    }else{
+      alert("registro completo")
+      this.navegar()
     }
   
   }
-
-  
-  
-  
 
   constructor(public router:Router){
 
   }
 
 
+  navegar(){
+    console.log("hola mundo")
+    this.router.navigateByUrl('/')
+    localStorage.setItem('nombre', JSON.stringify(this.name))
+    localStorage.setItem('apellido', JSON.stringify(this.lastname))
+    localStorage.setItem('correo', JSON.stringify(this.email))
+    localStorage.setItem('contraseña', JSON.stringify(this.password))
+  }
+  navegar1(){
+    console.log("hola mundo")
+    this.router.navigateByUrl('/dashboard')
+  }
 
 
 }

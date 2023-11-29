@@ -8,21 +8,20 @@
 </head>
 <body>
     <div class="psesion">
-    <p>Iniciar Sesión</p>
-</div>
-<div class="btnRegister">
-    <button (click)="navegar()">Register</button>
-
-    <button  (click)="navegar1()" >Dsashboard</button>
-</div>
+        <div class="texto">
+            <p>Iniciar Sesión</p>
+        </div>
+    </div>
+    <div class="btnRegister">
+        <button class="btn" (click)="navegar()">Register</button>
+    </div>
     <div class="login">
         <div class="m-2">
-            <label for="">Name</label><br>
-            <input type="text" name="" id="" [(ngModel)]="campo"><br><br>
-            {{campo}}
+            <label for="">Email</label><br>
+            <input type="text" [(ngModel)]="email" name="" id="" ><br><br>
             <label for="">Password</label><br>
-            <input placeholder="ingresa tu password " [(ngModel)]="campo"><br><br>
-            <button (click)="saveData()">Ingresar</button>
+            <input type="text" [(ngModel)]="password" placeholder="ingresa tu password "><br><br>
+            <button class="btn1" (click)="saveData()">Ingresar</button>
         </div>
     
     </div>

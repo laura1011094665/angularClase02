@@ -7,18 +7,24 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="btnRegister">
+        <button class="btn" (click)="navegar()">LOGIN</button>
+    </div>
     <div class="login">
-        <p>Registrate</p>
         <div class="form">
+            <h1>Registrar</h1>
             <label for="">Nombre</label><br>
-            <input placeholder="ingresa tu nombre"><br><br>
+            <input type="text" [(ngModel)]="name"  placeholder="ingresa tu nombre"><br><br>
             <label for="">Apellido</label><br>
-            <input placeholder="ingresa tu apellido"><br><br>
+            <input type="text" [(ngModel)]="lastname" placeholder="ingresa tu apellido"><br><br>
+
             <label for="">Correo</label><br>
-            <input placeholder="ingresa tu Correo"><br><br>
+            <input type="text" [(ngModel)]="email" placeholder="ingresa tu Correo"><br><br>
+
             <label for="">Password</label><br>
-            <input placeholder="ingresa tu nombre"><br><br>
-            <button>Registrar</button>
+            <input type="text" [(ngModel)]="password" placeholder="ingresa tu nombre"><br><br>
+
+            <button (click)="createUser()">Registrar</button>
         </div>
     
     </div>

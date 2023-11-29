@@ -1,4 +1,5 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -6,6 +7,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://ep01.epimg.net/especiales/2020/coronavirus-covid-19/un-mundo-de-calles-vacias/img/galeria/02.jpg?time=1913");
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .login{
@@ -13,8 +21,8 @@ body{
     justify-content: center;
     align-items: center;
     width: 30%;
-    height: 80%;
-    background: rgba(146, 187, 244, 0.476);
+    height: 28%;
+    background: rgb(186, 186, 186);
     border-radius: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -33,35 +41,58 @@ input::placeholder{
 .m-2{
     margin: 12px;
 }
-button{
+.btn1{
     width: 100px;
-    height: 30px;
+    height: 40px;
     border: 1px solid #000;
     border-radius: 6px;
     position: relative;
     left: 120px;
     
-    background: rgba(146, 187, 244, 0.476);
+    background: rgb(186, 186, 186);
 }
-button:hover{
-    left: 123px;
-    transition: 1s;
+.btn{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    position: relative;
+    left: 200px;
+    
+    background: rgb(186, 186, 186);
+}
+.btn:hover{
+    top: 12px;
+    transition: 5s;
     cursor: pointer;
 }
-
+.btn1:hover{
+    left: 130px;
+    transition: 3s;
+    cursor: pointer;
+}
 p{
     margin: 12px;
     font-size: 26px;
 }
 .psesion{
     width: 200px;
+    height: 300px;
     border-radius: 12px;
-    background: rgba(146, 187, 244, 0.476);
+    background: rgb(7, 7, 7);
+    color: aliceblue;
     position: relative;
     top: 1%;
+    left: 100px;
 }
 .btnRegister{
     position: absolute;
     left: 52%;
-    top: 22%;
+    top: 34%;
+}
+.texto{
+    width: 40px;
+    position: relative;
+    top: 102px;
+    left: 50px;
 }
