@@ -1,14 +1,14 @@
-
-
 .login{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    height: 28%;
+    width: 500px;
+    height: 250px;
     background: rgb(186, 186, 186);
     border-radius: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 350px;
 }
 input{
     width: 350px;
@@ -60,14 +60,13 @@ p{
     font-size: 26px;
 }
 .psesion{
-    width: 200px;
-    height: 300px;
+    width: 100px;
+    height: 120%;
     border-radius: 12px;
     background: rgb(7, 7, 7);
     color: aliceblue;
     position: relative;
     top: 1%;
-    left: 100px;
 }
 .btnRegister{
     position: absolute;
