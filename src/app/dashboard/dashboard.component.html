@@ -1,30 +1,41 @@
 
     <header>
-        <h1>RopeMaker</h1>
+        <h1>Busca tu trabajo ideal</h1>
     </header>
 
     <nav>
-        <button (click)="navegar1()">Ofertas De Trabajo</button>
-        <button>Administrador De Ofertas</button>
         <button (click)="navegar2()">Perfil</button>
         <button (click)="navegar()">Salir</button>
     </nav>
-    <div class="content">
-        <h1>Nosotros</h1>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat deleniti quasi, numquam aperiam iure esse, repellendus sed dolore,
-            ratione voluptas tempore. Fugit libero officiis adipisci? Architecto eligendi quam modi voluptatem!</p>
-    </div>
-    <div class="mapita">
-        <h2>Nuestra Ubicacion</h2>
-        <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3898460894957!2d-74.04369142411824!3d4.702147941643126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab26ea0240f%3A0x96607cc537204acd!2sCentro%20Comercial%20Unicentro%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1701235707908!5m2!1ses-419!2sco" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="barrita">
+        <div class="search-box">
+             <img src="https://cdn-icons-png.flaticon.com/512/3699/3699487.png" > 
+            <input type="text" [(ngModel)]="lugar" placeholder="Lugar">
+            <button (click)="navegar1()" >Buscar Ofertas</button>
+        </div>
     </div>
 
-    <div class="logo">
-        <h3>Nuestro Logo</h3>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut molestiae non suscipit totam minus deserunt quis expedita dolore deleniti. Quia velit doloribus aut vel dolore, voluptates est aperiam error fuga?</p>
-        <br>
-        <img src="https://img.freepik.com/vector-premium/diseno-logotipo-monogram-mr-logotipo-carta-creativa-empresas-empresas_719418-622.jpg?size=626&ext=jpg" >
+    <div class="card-container">
+        <div class="card">
+            <img src="https://greecerace.gr/wp-content/uploads/2019/07/greecerace-almazois-vasikos-teleperformance-logo800%CE%A7800.png">
+         
+        </div> 
+        <div class="card">
+            <img src="https://static.ofertia.com.co/comercios/tiendas-d1/profile-381420668.v5.png" alt="">
+           </div>
+           <div class="card">
+            <img src="data:image/png;base64,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" alt="">
+           </div>
+           <div class="card">
+            <img src="https://i.pinimg.com/originals/1c/2a/39/1c2a396172821afd4abed99d46d76553.png" alt="">
+           </div>
+           <div class="card">
+            <img src="https://static.todosloscatalogos.com/images/shops/alkosto-thumbnail.png" alt="">
+           </div>
     </div>
+   
+    <footer>
+        <h3>BuscaTrabajo</h3>
+        <p>copyright© 2023 BuscaTrabajo</p>
+    </footer>
+    

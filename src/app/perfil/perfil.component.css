@@ -1,0 +1,177 @@
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+}
+ nav button {
+    color: #333;
+    background: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    transition: background 0.3s ease;
+}
+
+nav button:hover {
+    background: #555;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+  img{
+    width: 100px;
+    border-radius: 12px;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 100%;
+    }
+  }
+
+  .contdatos{
+    width: 300px;
+    height: 450px;
+    margin:90px;
+    border-radius: 12px;
+    background: #ffffff;
+    padding: 12px;
+  }
+
+  .contdatos button{
+    background: none;
+    border: 1px solid #000;  
+    border-radius: 3px;
+    width: 100px;
+    height: 30px;
+  }
+  .contdatos button:hover{
+    transform: scale(.85);
+    transition: .5s;
+    cursor: pointer;
+    background: #555;
+    color: #ffffff;
+  }
+
+  
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 900px;
+  border-radius: 13px;
+  height:560px;
+  background: rgba(253, 253, 253, 0.528);
+  position: absolute;
+  left: 500px;
+  top: 250px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  width: 300px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card-container button {
+  color: #333;
+  background: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  transition: background 0.3s ease;
+}
+
+.card-container button:hover {
+  background: #555;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
+  
+
+
+.barrita{
+  padding: 20px;
+  position: absolute;
+  top: 120px;
+  left: 600px;
+
+  
+}
+.barrita img{
+ width: 50px;
+}
+
+.search-box {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: #ffffff;
+ margin: auto;
+ padding: 10px;
+ width: 700px;
+ height: 80px;
+ border: 1px solid #ccc;
+ border-radius: 50px;
+ font-size: 16px;
+}
+.barrita input{
+ border: none;
+ height: 50px;
+ width: 400px;
+}
+.barrita button{
+ background: #555;
+ color: #ccc;
+ height: 50px;
+ border-radius: 30px ;
+ border:none;
+ width: 120px;
+}
+.barrita button:hover{
+ transform: scale(1.05);
+ cursor: pointer;
+
+}
+
+  footer{
+    text-align: center;
+    padding: 1%;
+    width: 100vw;
+    height: 10%;
+    background: #555;
+    color: #ccc;
+    position: absolute;
+    bottom: 0;
+  }

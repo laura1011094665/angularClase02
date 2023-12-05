@@ -1,17 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    width: 100vw;
-    height: 100vh;
-    background-image: url("https://ep01.epimg.net/especiales/2020/coronavirus-covid-19/un-mundo-de-calles-vacias/img/galeria/02.jpg?time=1913");
-    position: relative;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 header {
     background-color: #333;
     color: white;
@@ -39,34 +26,88 @@ nav button {
 nav button:hover {
     background: #555;
     color: aliceblue;
+    cursor: pointer;
 }
-.content{
-    width: 35%;
-    height: 26%;
-    background: rgb(249, 249, 249);
-    margin: 5%;
-    padding: 12px;
-    border-radius: 13px;
-}
-.mapita{
-    width: 24%;
-    background: rgb(249, 249, 249);
-    height: 35%;
-    margin: auto;
-    padding: 13px;
-    border-radius: 15px;
 
-}
-.logo{
-    width: 29%;
-    background: rgb(249, 249, 249);
-    margin-top: -655px;
-    margin-left: 1252px;
-    padding: 14px;
-    border-radius: 15px;
-}
-img{
-    width: 30%;
-    margin-left: 170px;
-    border-radius: 13px;
-}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin: 75px;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    width: 200px;
+    height: 200px;
+  }
+  img{
+    width: 150px;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 600px) {
+    .card {
+      width: 100%;
+    }
+  } 
+  
+  .barrita{
+     margin: auto;
+     padding: 20px;
+
+     
+  }
+  .barrita img{
+    width: 50px;
+  }
+
+  .search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    margin: auto;
+    padding: 10px;
+    width: 700px;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+  }
+  .barrita input{
+    border: none;
+    height: 50px;
+    width: 400px;
+  }
+  .barrita button{
+    background: #555;
+    color: #ccc;
+    height: 50px;
+    border-radius: 30px ;
+    border:none;
+    width: 120px;
+  }
+  .barrita button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+
+  }
+
+  footer{
+    text-align: center;
+    padding: 1%;
+    width: 100vw;
+    height: 10%;
+    background: #555;
+    color: #ccc;
+    position: absolute;
+    bottom: 0;
+  }

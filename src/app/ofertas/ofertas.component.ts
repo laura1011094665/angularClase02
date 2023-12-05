@@ -27,4 +27,8 @@ export class OfertasComponent {
     console.log("hola mundo")
     this.router.navigateByUrl('/perfil')
   }
+  navegar3(){
+    console.log("hola mundo")
+    this.router.navigateByUrl('/admin-ofertas')
+  }
 }

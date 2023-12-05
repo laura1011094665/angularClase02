@@ -4,21 +4,66 @@
 
     <nav>
         <button (click)="navegar1()">Inicio</button>
-        <button>Ofertas De Empleo</button>
-        <button>Administrador De Ofertas</button>
         <button (click)="navegar()">Salir</button>
     </nav>
-    <div class="content">
-        <h1>Nombre</h1>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat deleniti quasi, numquam aperiam iure esse, repellendus sed dolore,
-            ratione voluptas tempore. Fugit libero officiis adipisci? Architecto eligendi quam modi voluptatem!</p>
-            <button>postularme</button>
-    </div>
-    <div class="mapita">
-        <h1>Globan</h1>
-        
-        <br>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis nostrum cum rerum sint esse beatae tempore ea, eveniet optio quod ut molestiae itaque deserunt reprehenderit. Mollitia, laudantium maxime. Molestiae, recusandae.</p>
-        <button>postularme</button>
+
+        <div class="contdatos" >
+            <img src="https://img.freepik.com/vector-premium/icono-perfil-usuario-estilo-plano-ilustracion-vector-avatar-miembro-sobre-fondo-aislado-concepto-negocio-signo-permiso-humano_157943-15752.jpg" alt="">
+            <br>
+            <button (click)="botonPrueba()" >Ver Datos</button>
+            <br><br>
+            <h3>Datos personales</h3>
+            <br>
+          <p>Nombre: {{name}}</p>
+          <br>
+          <p>Apellido: {{lastname}}</p>
+          <br>
+          <p>Correo: {{email}}</p>
+          <br>
+          <br>
+          <button (click)="navegar2()">Editar Datos</button>
         </div>
+
+        <div class="barrita">
+            <div class="search-box">
+                 <img src="https://cdn-icons-png.flaticon.com/512/3699/3699487.png" > 
+                <input type="text"  placeholder="Lugar">
+                <button  >Buscar Ofertas</button>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+              <h2>Exito</h2>
+              <br>
+              <button>Ver Más</button>
+            </div> 
+            <div class="card">
+              <h2>Alkosto</h2>
+              <br>
+              <button>Ver Más</button>
+            </div> 
+            
+            <div class="card">
+                <h2>Globant</h2>
+                <br>
+                <button>Ver Más</button>
+              </div> 
+              
+            <div class="card">
+                <h2>Cocacola</h2>
+                <br>
+                <button>Ver Más</button>
+              </div> 
+              <div class="card">
+                <h2>Fruco</h2>
+                <br>
+                <button>Ver Más</button>
+              </div>
+
+        </div>
+    
+    <footer>
+        <h3>BuscaTrabajo</h3>
+        <p>copyright© 2023 BuscaTrabajo</p>
+    </footer>

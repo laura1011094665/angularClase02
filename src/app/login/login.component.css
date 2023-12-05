@@ -8,8 +8,8 @@
     border-radius: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
-    top: -140px;
-    left: 100px;
+    top: 365px;
+    left: 810px;
 }
 input{
     width: 350px;
@@ -47,7 +47,7 @@ input::placeholder{
     background: rgb(186, 186, 186);
 }
 .btn:hover{
-    top: 12px;
+    top: -12px;
     transition: 5s;
     cursor: pointer;
 }
@@ -66,8 +66,9 @@ p{
     border-radius: 12px;
     background: rgb(7, 7, 7);
     color: aliceblue;
-    position: relative;
-    top: 150px;
+    position: absolute;
+    top: 350px;
+    left: 600px;
 }
 .btnRegister{
     position: absolute;
@@ -80,3 +81,21 @@ p{
     top: 102px;
     left: 50px;
 }
+.feedback{
+    margin-left: 4  6px;
+    max-width: 100%;
+    width: 100%;
+    background-color: gray;
+    padding: 5px;
+    font-size: 10px;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .success{
+    border: 2px solid greenyellow;
+  }
+
+  .error{
+    border: 2px solid tomato;
+  }

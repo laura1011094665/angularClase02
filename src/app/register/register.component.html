@@ -5,17 +5,23 @@
     <div class="login">
         <div class="form">
             <h1>Registrar</h1>
-            <label for="">Nombre</label><br>
-            <input type="text" [(ngModel)]="name"  placeholder="ingresa tu nombre"><br><br>
-            <label for="">Apellido</label><br>
-            <input type="text" [(ngModel)]="lastname" placeholder="ingresa tu apellido"><br><br>
+            <div id="nombre">
+                <label for="name" >Nombre</label>
+                <input type="text" id="name" [(ngModel)]="name"  placeholder="ingresa tu nombre"><br><br>
+            </div>
+            <div id="apellido">
 
-            <label for="">Correo</label><br>
-            <input type="text" [(ngModel)]="email" placeholder="ingresa tu Correo"><br><br>
-
-            <label for="">Password</label><br>
-            <input type="text" [(ngModel)]="password" placeholder="ingresa tu nombre"><br><br>
-
+                <label for="">Apellido</label><br>
+                <input type="text" id="lastname" [(ngModel)]="lastname" placeholder="ingresa tu apellido"><br><br>
+            </div>
+            <div id="correo">
+                <label for="">Correo</label><br>
+                <input type="text" id="email" [(ngModel)]="email" placeholder="ingresa tu Correo"><br><br>
+            </div>
+            <div id="contrase">
+                <label for="">Password</label><br>
+                <input type="password" id="password" [(ngModel)]="password" placeholder="ingresa tu nombre"><br><br>
+            </div>
             <button (click)="createUser()">Registrar</button>
         </div>
     

@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from '../register/register.component';
 
 
-
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -15,9 +14,9 @@ import { RegisterComponent } from '../register/register.component';
 })
 export class LoginComponent {
   storageGlobal: String = '';
-
   email: String ='';
   password: String='';
+
 
 
 
@@ -26,9 +25,20 @@ export class LoginComponent {
     
   }
 
+  validarCampo(valor: string ): boolean {
+    const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+    return regexEmail.test(valor)
+  }
+  validarCampo1(valor:string ):boolean{
+    const  regexPassword= /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return regexPassword.test(valor)
+
+  }
 
 
   saveData(){
+    
+
     const regX =/"/g
     const userEmail = localStorage.getItem("correo")
     console.log(userEmail)
@@ -40,18 +50,24 @@ export class LoginComponent {
     console.log(userPass)
     const userPassParse =userPass?.replace(regX,"")
     console.log(userPassParse)
-
-    if(this.email == '' || this.password == ''){
-      alert('tienes que llenar los campos')
-    } else if(this.email != userEmailParse || this.password!= userPassParse){
-      alert('el usuario es incorrecto')
-    }else if(this.email == userEmailParse || this.password == userPassParse){
-      alert('bienvenido a RopeMaker')
+    const email1= document.getElementById('email') as HTMLInputElement;
+    const password1= document.getElementById('password') as HTMLInputElement;
+    if(!this.validarCampo(email1.value) ){
+     alert('no es un correo valido')
+    }else if(this.validarCampo1(password1.value)){
+      alert('la contraseña no es valida')
+    }else{
+      if(this.email == '' || this.password == ''){
+        alert('tienes que llenar los campos')
+      } else if(this.email != userEmailParse || this.password!= userPassParse){
+        alert('el usuario es incorrecto')
+      }else if(this.email == userEmailParse || this.password == userPassParse){
+        
+      alert('bienvenido a Buscar Tu Trabajo Ideal')
       console.log(userEmail)
 
       this.navegar1()
-    }else{
-      alert('error de voce')
+      }
     }
   }
 
