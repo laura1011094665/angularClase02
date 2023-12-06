@@ -27,8 +27,8 @@
         <div class="barrita">
             <div class="search-box">
                  <img src="https://cdn-icons-png.flaticon.com/512/3699/3699487.png" > 
-                <input type="text"  placeholder="Lugar">
-                <button  >Buscar Ofertas</button>
+                <input type="text" [(ngModel)]="lugar" placeholder="Lugar">
+                <button (click)="navegar3()" >Buscar Ofertas</button>
             </div>
         </div>
 
@@ -62,6 +62,22 @@
               </div>
 
         </div>
+        <div class="contdatos1" >
+         <div class="idiomas">
+          <h3>Idiomas</h3>
+          <img src="https://cdn-icons-png.flaticon.com/512/215/215568.png" alt="">
+         </div>
+         <div class="estudios">
+          <h3>Estudios</h3>
+          
+          <img src="https://cdn-icons-png.flaticon.com/512/215/215568.png" alt="">
+         </div>
+         <div class="conocimientos">
+          <h3>Conocimientos</h3>
+          
+          <img src="https://cdn-icons-png.flaticon.com/512/215/215568.png" alt="">
+         </div>
+      </div>
     
     <footer>
         <h3>BuscaTrabajo</h3>

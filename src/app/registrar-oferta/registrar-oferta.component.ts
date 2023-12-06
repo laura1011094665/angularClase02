@@ -3,29 +3,23 @@ import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-ofertas',
+  selector: 'app-registrar-oferta',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './ofertas.component.html',
-  styleUrl: './ofertas.component.css'
+  templateUrl: './registrar-oferta.component.html',
+  styleUrl: './registrar-oferta.component.css'
 })
-export class OfertasComponent {
+export class RegistrarOfertaComponent {
   constructor(public router: Router){
-    
+
   }
+
   navegar(){
     console.log("hola mundo")
     this.router.navigateByUrl('/')
   }
-  
   navegar1(){
     console.log("hola mundo")
-    this.router.navigateByUrl('/dashboard')
+    this.router.navigateByUrl('/admin-ofertas')
   }
-  
-  navegar2(){
-    console.log("hola mundo")
-    this.router.navigateByUrl('/perfil')
-  }
-  
 }

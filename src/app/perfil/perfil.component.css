@@ -165,6 +165,87 @@ nav button:hover {
 
 }
 
+
+.contdatos1{
+  width: 300px;
+  height: 450px;
+  margin:90px;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  top: 120px;
+}
+
+.idiomas{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 13px;
+  margin-top: 12px;
+}
+.idiomas h3{
+  margin: 12px;
+}
+.idiomas img{
+  width: 30px;
+}
+.idiomas img:hover{
+  transition: 1s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.estudios{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 13px;
+  margin-top: 60px;
+}
+.estudios img{
+  width: 30px;
+  height: 30px;
+}
+.estudios img:hover{
+  transition: 1s;
+  
+ transform: scale(1.05);
+ cursor: pointer;
+}
+
+.estudios h3{
+  margin: 12px;
+}
+
+
+.conocimientos{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 13px;
+  margin-top: 60px;
+}
+.conocimientos img{
+  width: 30px;
+}
+.conocimientos img:hover{
+  transition: 1s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.conocimientos h3{
+  margin: 12px;
+}
+
   footer{
     text-align: center;
     padding: 1%;

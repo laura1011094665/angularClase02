@@ -48,7 +48,7 @@ export class EditarPerfilComponent {
     console.log(userPass)
     const userPassParse =userPass?.replace(regX,"")
     console.log(userPassParse)
-
+    
   }
 
   navegar(){

@@ -3,6 +3,13 @@ import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
+
+export interface Usuario{
+  name:String;
+  lastname:String;
+  email:String;
+  password:String;
+}
 @Component({
   selector: 'app-register',
   standalone: true,
@@ -10,13 +17,15 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './register.component.html',
   styleUrl: './register.component.css'
 })
+
+
 export class RegisterComponent {
-  storageGlobal: String=''
-  campo=''
-  name:String=''
-  lastname:String=''
-  email:String=''
-  password:String=''
+  public Usuario:Usuario[]=[];
+  name:String='';
+  lastname:String='';
+  email:String='';
+  password:String='';
+
   
   validarCampo(valor:string):boolean{
     const text=/^[A-Za-z Á-Úá-úñÑ]{3,20}/;

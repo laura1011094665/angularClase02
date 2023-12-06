@@ -48,4 +48,9 @@ export class AdminOfertasComponent {
     console.log("hola mundo")
     this.router.navigateByUrl('/dashboard')
   }
+   
+  navegar4(){
+    console.log("hola mundo")
+    this.router.navigateByUrl('/registrar-oferta')
+  }
 }

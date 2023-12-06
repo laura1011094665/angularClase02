@@ -62,11 +62,15 @@ export class LoginComponent {
       } else if(this.email != userEmailParse || this.password!= userPassParse){
         alert('el usuario es incorrecto')
       }else if(this.email == userEmailParse || this.password == userPassParse){
-        
-      alert('bienvenido a Buscar Tu Trabajo Ideal')
-      console.log(userEmail)
-
-      this.navegar1()
+        const dominio = this.email.split('@')[1];
+        if(dominio == "computrabajo.com"){
+          alert('bienvenido administrador de las ofertas')
+          this.navegar2()
+        }else if(dominio == "gmail.com"){
+          alert('bienvenido a Buscar Tu Trabajo Ideal')
+          console.log(userEmail)
+          this.navegar1()
+        }
       }
     }
   }
@@ -80,6 +84,12 @@ export class LoginComponent {
   navegar1(){
     console.log("hola mundo")
     this.router.navigateByUrl('/dashboard')
+  }
+  navegar2(){
+    
+    console.log("hola mundo")
+    this.router.navigateByUrl('/admin-ofertas')
+
   }
   getstoregeGlobal(){
     let texto = JSON.stringify( localStorage.getItem('campo'))

@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-perfil',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './perfil.component.html',
   styleUrl: './perfil.component.css'
 })
@@ -29,7 +30,6 @@ export class PerfilComponent {
     this.lastname = localStorage.getItem("apellido") || '';
     this.email = localStorage.getItem("correo") || '';
     this.password = localStorage.getItem("constraseña") || '';
-    
   }
 
 
@@ -60,3 +60,4 @@ export class PerfilComponent {
     }
   }
 }
+
